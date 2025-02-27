@@ -19,6 +19,7 @@
             width: 220px;
             text-align: center;
             position: relative; /* Para posicionar el título correctamente */
+            transition: transform 0.3s ease;
         }
 
         .movie img {
@@ -55,6 +56,19 @@
             transform: translateY(20px); /* Desplazado hacia abajo para que aparezca */
             transition: opacity 1s ease, transform 0.2s ease; /* Transiciones para el efecto de aparición */
         }
+
+        /* Media query para pantallas más grandes */
+        @media (min-width: 768px) {
+            .movie {
+                width: 250px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .movie {
+                width: 300px;
+            }
+        }
     </style> 
 </head>
 <body>
@@ -62,7 +76,7 @@
     <!-- Película 1 -->
     <div class="movie">
         <a href="pelis/sincabeza.html" tabindex="0">
-            <img src="https://i.ibb.co/cftz9FV/jscabeza.jpg">
+            <img src="https://i.ibb.co/cftz9FV/jscabeza.jpg" alt="El Jinete Sin Cabeza">
         </a>
         <span class="movie-title">EL JINETE SIN CABEZA</span>
     </div>
@@ -70,7 +84,7 @@
     <!-- Película 2 -->
     <div class="movie">
         <a href="pelis/ultimosoldado.html" tabindex="0">
-            <img src="https://i.ibb.co/k6wNBd9S/ultimosoldado.jpg">
+            <img src="https://i.ibb.co/k6wNBd9S/ultimosoldado.jpg" alt="El Último Soldado">
         </a>
         <span class="movie-title">EL ULTIMO SOLDADO</span>
     </div>
@@ -78,7 +92,7 @@
     <!-- Película 3 -->
     <div class="movie">
         <a href="pelis/prometeo.html" tabindex="0">
-            <img src="https://i.ibb.co/cXQYTgFY/prometeo.jpg">
+            <img src="https://i.ibb.co/cXQYTgFY/prometeo.jpg" alt="Prometheus">
         </a>
         <span class="movie-title">PROMETHEUS</span>
     </div>
@@ -86,31 +100,25 @@
     <!-- Película 4 -->
     <div class="movie">
         <a href="pelis/galaxyterror.html" tabindex="0">
-            <img src="https://i.ibb.co/DfkDn1rD/g-o-terror.jpg">
+            <img src="https://i.ibb.co/DfkDn1rD/g-o-terror.jpg" alt="Galaxia Del Terror">
         </a>
         <span class="movie-title">GALAXIA DEL TERROR</span>
     </div>
 	
-	    <div class="movie">
+    <div class="movie">
         <a href="pelis/click.html" tabindex="0">
-            <img src="https://i.ibb.co/PZJGKSz4/click.jpg">
+            <img src="https://i.ibb.co/PZJGKSz4/click.jpg" alt="Click">
         </a>
         <span class="movie-title">CLICK</span>
     </div>
 	
-           <div class="movie">
+    <div class="movie">
         <a href="pelis/metamorfosis.html" tabindex="0">
-            <img src="https://i.ibb.co/PGz2hvyC/metamorfosis.jpg">
+            <img src="https://i.ibb.co/PGz2hvyC/metamorfosis.jpg" alt="Metamorfosis">
         </a>
         <span class="movie-title">METAMORFOSIS</span>
     </div>
 
-	           <div class="movie">
-        <a href="pelis/kraven.html" tabindex="0">
-            <img src="https://i.ibb.co/PvcYjhrT/kraven.jpg">
-        </a>
-        <span class="movie-title">KRAVEN</span>
-    </div>
     <!-- Agrega más películas según sea necesario -->
 
     <script>
